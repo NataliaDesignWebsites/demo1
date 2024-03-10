@@ -1401,10 +1401,12 @@ form label {
   padding-right: 50px;
   border-radius: 30px;
 }
+
+
+
 #btn_ubicacion:hover, #btn_asistencia:hover{
   background:rgba(238, 148, 22, 0.8);
 }
-
 
 .bi {
   color:black;
