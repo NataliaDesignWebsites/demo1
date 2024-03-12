@@ -5,6 +5,21 @@
   font-weight: normal;
   font-style: normal;
 }
+
+
+@font-face {
+  font-family: 'AnyaTamy';
+  src: url(../fonts/demo1/AnyaTamy.otf);
+}
+
+
+@font-face {
+  font-family: 'WestwoodStudio';
+  src: url(../fonts/demo1/WestwoodStudio.ttf);
+}
+
+
+
 /* =======================================================
 *
 * 	Template Style 
@@ -69,6 +84,8 @@ h1, h2, h3, h4, h5, h6, figure {
   margin: 0 0 20px 0;
 }
 
+
+
 ::-webkit-selection {
   color: #fff;
   background: rgba(223, 182, 129, 0.8);;
@@ -105,6 +122,8 @@ h1, h2, h3, h4, h5, h6, figure {
   line-height: 40px;
   font-family: "Sacramento", Arial, serif;
 }
+
+
 .fh5co-nav a {
   padding: 5px 10px;
   color: #fff;
@@ -1400,6 +1419,7 @@ form label {
   padding-left: 50px;
   padding-right: 50px;
   border-radius: 30px;
+  font-family: AnyaTamy;
 }
 
 
