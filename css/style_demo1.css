@@ -393,10 +393,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-counter .fh5co-heading span,
 #fh5co-event .fh5co-heading span {
   color: #828282;
-  text-transform: uppercase;
-  font-size: 13px;
-  letter-spacing: 2px;
-  font-weight: 600;
+
 }
 #fh5co-counter .overlay,
 #fh5co-event .overlay {
@@ -456,7 +453,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 #fh5co-counter .event-wrap i,
 #fh5co-event .event-wrap i {
-  color: black ;
+  
   font-size: 20px;
 }
 
@@ -732,7 +729,7 @@ h1, h2, h3, h4, h5, h6, figure {
   }
 }
 #fh5co-gallery-list li a .case-studies-summary span {
-  text-transform: uppercase;
+  
   letter-spacing: 2px;
   font-size: 13px;
   color: rgba(255, 255, 255, 0.7);
@@ -1006,7 +1003,7 @@ form label {
 
 .simply-countdown > .simply-section .simply-word {
   color: rgba(255, 255, 255, 0.7);
-  text-transform: uppercase;
+
   font-size: 12px;
   /* words */
 }
@@ -1219,13 +1216,7 @@ form label {
   line-height: 1.5;
   color: #828282;
 }
-.fh5co-heading span {
-  text-transform: uppercase;
-  font-size: 13px;
-  letter-spacing: 2px;
-  font-weight: 600;
-  color: rgba(0, 0, 0, 0.4);
-}
+
 
 #fh5co-testimonial .wrap-testimony {
   position: relative;
@@ -1235,7 +1226,7 @@ form label {
 }
 #fh5co-testimonial .wrap-testimony .testimony-slide span {
   font-size: 12px;
-  text-transform: uppercase;
+  
   letter-spacing: 2px;
   font-weight: 700;
   display: block;
@@ -1346,7 +1337,7 @@ form label {
   }
 }
 .feature-left .feature-copy h3 {
-  text-transform: uppercase;
+ 
   font-size: 18px;
   color:  rgba(223, 182, 129, 0.8);
   margin-bottom: 10px;
@@ -1412,9 +1403,8 @@ form label {
   height: 54px;
   border: none !important;
   background:rgba(223, 182, 129, 0.8);
-  color: black;
+  color: gray;
   font-size: 16px;
-  text-transform: uppercase;
   font-weight: 400;
   padding-left: 50px;
   padding-right: 50px;
@@ -1429,7 +1419,7 @@ form label {
 }
 
 .bi {
-  color:black;
+  color:gray;
 }
 
 
@@ -1615,7 +1605,6 @@ form label {
   height: 2px;
   color: #252525;
   font: bold 14px/.4 Helvetica;
-  text-transform: uppercase;
   text-indent: -55px;
   background: #252525;
   transition: all .2s ease-out;
