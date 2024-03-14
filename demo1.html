@@ -37,14 +37,15 @@
 				<div class="col-md-8 col-md-offset-2 text-center">
 					<div class="display-t">
 						<div class="display-tc animate-box" data-animate-effect="fadeIn">
-							<h1 style="font-family: WestwoodStudio; font-size: 77px;">Natalia <span style="color:orange;">&</span> Olimpo</h1>
-							<h2></h2>
+							<p style="font-family: WestwoodStudio; font-size: 77px; color:white; margin-top:-50px;">Natalia</p>
+							<p style="font-family: WestwoodStudio; font-size: 77px; margin-top:-50px; margin-bottom: -50px; color:orange;">&</p>
+							<p style="font-family: WestwoodStudio; font-size: 77px; color:white;">Olimpo</p>
 							<div class="simply-countdown simply-countdown-one" style="font-family: AnyaTamy;" ></div>
 							<p>
-								<!--<a href="#fh5co-started" class="btn btn-default btn-sm">Save the date</a> -->
-								<audio autoplay controls>
-									<source src="images/img-demo1/turningpage.mp3" type="audio/mpeg">
-								</audio>
+								<audio autoplay style="display: none;" src="images/img-demo1/turningpage.mp3" controls>  
+									Tu navegador no soporta el elemento <code>audio</code>.  
+								</audio>  
+							
 							</p>
 						</div>
 					</div>
@@ -67,7 +68,7 @@
 					<p>
 						<img style="width: 50px; height: 50px ;"alt="Chat on WhatsApp" src="images/img-demo1/and.svg" />
 					</p>
-					<p style="font-family: AnyaTamy;" > <b>Susana Mary Amaya Coitinho.</b></p>
+					<p style="font-family: AnyaTamy;" > <b>Susana Mary Amaya Coitinho</b></p>
 					<p style="font-family: AnyaTamy;" > <b>J. Jesús Cruz Martínez </b></p>
 				</div>
 			</div>
@@ -395,7 +396,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 fh5co-heading animate-box text-center">
-						<h2 style="font-family: WestwoodStudio;">Mesa de Regalos</h2>
+						<h2 style="font-family: WestwoodStudio;">Nuestro mejor regalo. . .</h2>
 						<p style="font-family: AnyaTamy;" ><span> <i class="bi bi-gift" style="font-size: 45px; color:rgb(212, 165, 77);"></i> </span></p>
 						<p style="font-family: AnyaTamy;" ><span> Aquello que más deseamos en nuestra boda es su compañía. </span></p>
 					</div>
@@ -466,6 +467,11 @@
 	</div>
 
 	<div class="gototop js-top">
+		
+		<a id="boton">
+			<i class="bi bi-volume-mute-fill" style="color: white; font-size: 25px;"></i>
+		</a>  
+		<p style="margin-bottom: 10px;"></p>
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 	</div>
 	
@@ -514,8 +520,27 @@
 	$('#exampleModal').on('shown.bs.modal', function () {
   		$('#btn_modal').trigger('focus')
 	}); 
+	
 
 </script>
+
+<script type="text/javascript">
+	var v = document.getElementsByTagName("audio")[0];
+	var sound = true;
+	
+	var boton = document.getElementById("boton");
+	boton.addEventListener("click", function(){
+	   if (!sound) {
+		   v.play();
+		   this.innerHTML = '<i class="bi bi-volume-mute-fill" style="color: white; font-size: 25px;"></i>';
+		   sound = true;
+	   } else {
+		   v.pause();
+		   this.innerHTML = '<i class="bi bi-volume-up-fill" style="color: white; font-size: 25px;"></i>';
+		   sound = false;
+	   }
+	});
+	</script>
 
 	</body>
 </html>
