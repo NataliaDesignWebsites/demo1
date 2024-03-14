@@ -42,7 +42,7 @@
 							<p style="font-family: WestwoodStudio; font-size: 77px; color:white;">Olimpo</p>
 							<div class="simply-countdown simply-countdown-one" style="font-family: AnyaTamy;" ></div>
 							<p>
-								<audio autoplay style="display: none;" src="images/img-demo1/turningpage.mp3" controls>  
+								<audio id="audioplayer" style="display: none;" src="images/img-demo1/turningpage.mp3" loop="loop">  
 									Tu navegador no soporta el elemento <code>audio</code>.  
 								</audio>  
 							
@@ -500,6 +500,11 @@
 	<script src="js/main.js"></script>
 
 	<script>
+
+	$(document).ready(function() {
+		$("#audioplayer").get(0).play();
+	});
+
     var d = new Date(new Date(2025,6,12) + 200 * 120 * 120 * 2000);
 
     // default example
