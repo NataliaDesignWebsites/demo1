@@ -5,6 +5,8 @@
   font-weight: normal;
   font-style: normal;
 }
+
+
 /* =======================================================
 *
 * 	Template Style 
@@ -220,6 +222,8 @@ h1, h2, h3, h4, h5, h6, figure {
 .fh5co-nav ul li.active > a {
   color: #fff !important;
 }
+
+
 
 #fh5co-counter,
 #fh5co-event,
