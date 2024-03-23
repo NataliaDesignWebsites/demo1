@@ -66,7 +66,7 @@
 					<p style="font-family: AnyaTamy;" > <b>Ma. Teresa Palafox Corrales </b></p>
 					<p style="font-family: AnyaTamy;" > <b>Ramón Amador Zapien </b></p>
 					<p>
-						<img style="width: 50px; height: 50px ;"alt="Chat on WhatsApp" src="images/img-demo1/and.svg" />
+						<img style="width: 50px; height: 50px ;"alt="" src="images/img-demo1/and.svg" />
 					</p>
 					<p style="font-family: AnyaTamy;" > <b>Susana Mary Amaya Coitinho</b></p>
 					<p style="font-family: AnyaTamy;" > <b>J. Jesús Cruz Martínez </b></p>
@@ -501,10 +501,6 @@
 
 	<script>
 
-	$(document).ready(function() {
-		$("#audioplayer").get(0).play();
-	});
-
     var d = new Date(new Date(2025,6,12) + 200 * 120 * 120 * 2000);
 
     // default example
@@ -525,6 +521,10 @@
 	$('#exampleModal').on('shown.bs.modal', function () {
   		$('#btn_modal').trigger('focus')
 	}); 
+
+	$(document).ready(function() {
+		$("#audioplayer").get(0).play();
+	});
 	
 
 </script>
