@@ -1438,58 +1438,59 @@ form label {
 }
 
 #btn_ubicacion{
-  height: 54px;
-  border: none !important;
-  background:rgba(211, 192, 163, 1);
+  height: 50px;
+  background-color: transparent;
   color: black;
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 400;
   padding-left: 50px;
   padding-right: 50px;
+  border-radius: 30px;
+  border-style: solid;
+  border-color: #926e42;
+  border-width: 3px;
 
 }
 
-.btn_asistencia
-{
-  height: 54px;
-  border: none !important;
-  background:rgba(211, 192, 163, 1);
-  color: black;
+#btn_ubicacion:hover{
+  color:white;
+  background: #926e42;
+}
+
+#btn_ubicacion:hover > i{
+  color:white;
+  background: #926e42;
+}
+
+
+#btn_mesa_regalos {
+  height: 50px;
+  background-color: transparent;
+  color: white;
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 400;
   padding-left: 50px;
   padding-right: 50px;
+  border-radius: 30px;
+  border-style: solid;
+  border-color: white;
+  border-width: 3px;
 }
 
-#btn_ubicacion:hover, .btn_asistencia:hover{
+#btn_mesa_regalos > i {
   color:white;
-  background:black
 }
 
-
-.btn_mesa_regalos {
-  height: 40px;
-  border: none !important;
-  background:rgba(211, 192, 163, 1);
-  color: black;
-  font-size: 12px;
-  text-transform: uppercase;
-  font-weight: 50px;
-  padding-left: 50px;
-  padding-right: 50px;
+#btn_mesa_regalos:hover{
+  color : #926e42;
+  background: white;
 }
 
-.btn_mesa_regalos:hover{
-  color:white;
-  background:black
+#btn_mesa_regalos:hover > i {
+  color: #926e42;
 }
-
-.bi {
-  color:black;
-}
-
 
 #fh5co-started .form-inline .form-group {
   width: 100% !important;
