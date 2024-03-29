@@ -967,6 +967,31 @@ form label {
   animation: pulse 1s ease infinite;
 }
 
+#countdown{
+  animation: pulse 1s ease infinite;
+  font-family: "AnyaTamy";
+  text-align: center;
+  font-size: 30px;
+  vertical-align: middle;
+}
+
+.countdown-element{
+  background-color:#d4a54d; 
+  height: 100px;
+  opacity: 60%;
+}
+
+.countdown-element > p {
+  color:white;
+}
+.countdown-element > p > span{
+  color:white;
+  
+}
+
+
+
+
 @keyframes pulse {
   0% {
     transform: scale(1);
@@ -1000,7 +1025,6 @@ form label {
 
 .simply-countdown > .simply-section .simply-word {
   color: rgba(255, 255, 255, 0.7);
-
   font-size: 12px;
   /* words */
 }
