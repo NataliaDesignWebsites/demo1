@@ -47,10 +47,13 @@
 							<p>&nbsp;</p>
 							<p style="font-family: AnyaTamy; font-size: 20px; color:white; letter-spacing: 10px;">12-JUL-25</p>
 							<p>
-								<audio id="audioplayer" style="display: none;" src="images/img-demo1/turningpage.mp3" loop="loop">  
+								<audio id="audioplayer"style="display: none;" src="images/img-demo1/turningpage.mp3" loop="loop" > 
 									Tu navegador no soporta el elemento <code>audio</code>.  
 								</audio>  
 							</p>
+
+							<button  id="Btn_Modal_Sonido"type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal_Sonido" style="display: none;">
+							</button>
 						</div>
 					</div>
 				</div>
@@ -234,7 +237,8 @@
 									<a href="https://www.google.com.mx/maps/place/Parroquia+Santa+Cruz+y+la+Virgen+del+Rosario/@17.6649503,-101.5999765,17z/data=!3m1!4b1!4m11!3m10!1s0x84347666fde6b171:0x397814a9c0785532!5m4!1s2024-04-18!2i2!4m1!1i2!8m2!3d17.6649452!4d-101.5974016!16s%2Fg%2F1wfcpght?entry=ttu" target="_blank">
 										<button id="btn_ubicacion"type="submit" class="btn btn-default btn-block"> <i class="bi bi-geo-alt-fill"></i> Ubicación</button>
 									</a>
-									<button id="btn_modal" class="btn btn-default btn-block" style="display: none;"> <i class="bi bi-geo-alt-fill"></i> asdasd</button>
+							
+
 								</div>
 							</div>
 							<div class="col-md-4 col-sm-4 text-center">
@@ -368,12 +372,15 @@
 							<h3 style=" font-family: AnyaTamy; text-transform: uppercase; color:rgb(212, 165, 77); text-align: center;">BLOQUEO DE HABITACIÓN</h3>
 							<p style="text-align: justify;">El bloqueo o apartado de habitación se realizará efectuando un primer pago de <b>$800.00 MN</b> por adulto y <b>$300.00 MN</b> por menor.
 								Teniendo como fecha límite el <b>1ro de Mayo de 2024.</b></p>
-								<p>
+								<p>&nbsp;</p>
+								<p style="text-align: justify; ">
 									<b>Depósito o transferencia: </b>
 									<br>
-									BBVA: FELICITAS BOSQUES TORRES - CTA.: 0148388059
+									BBVA: FELICITAS BOSQUES TORRES CTA: 0148388059
 									<br>
-									BANCO DEL BAJÍO: FELICITAS BOSQUES TORRES - CTA.: 5930813
+									BANCO DEL BAJÍO: FELICITAS BOSQUES TORRES - CTA.: 5930813 
+									<br>
+									CONCEPTO: Boda Natalia y Olimpo
 								</p>
 						</div>
 					</div>
@@ -386,12 +393,15 @@
 							<h3 style=" font-family: AnyaTamy; text-transform: uppercase; color:rgb(212, 165, 77); text-align: center;">PAGOS RESTANTES</h3>
 							<p style="text-align: justify;">Los pagos restantes serán distribuidos en <b>11 mensualidades</b> de <b>$546.00 MN en habitación doble p/p. </b>
 								Para mayor información en la distribución y logística de las habitaciones, serán contactados por nuestra wedding planner.</p>
-								<p>
+								<p>&nbsp;</p>
+								<p style="text-align: justify;">
 									<b>Depósito o transferencia: </b>
 									<br>
-									BBVA: FELICITAS BOSQUES TORRES - CTA.: 0148388059
+									BBVA: FELICITAS BOSQUES TORRES CTA: 0148388059
 									<br>
-									BANCO DEL BAJÍO: FELICITAS BOSQUES TORRES - CTA.: 5930813
+									BANCO DEL BAJÍO: FELICITAS BOSQUES TORRES - CTA.: 5930813 
+									<br>
+									CONCEPTO: Boda Natalia y Olimpo
 								</p>
 								
 						</div>
@@ -493,22 +503,37 @@
 		</div>
 	</div>
 
-	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		<div class="modal-dialog" role="document">
+	<div id="Modal_Sonido" class="modal fade" tabindex="-1" role="dialog" 
+	aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+		<div class="modal-dialog modal-dialog-centered" role="document">
 		  <div class="modal-content">
-			<div class="modal-header">
-			  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-			  </button>
-			</div>
 			<div class="modal-body">
-			</div>
-			<div class="modal-footer">
-			  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<p>&nbsp;</p>
+						<h2 style="font-family: WestwoodStudio; color: black; font-size: 50px; font-weight: bold;">¿Queires disfrutar de nuestra melodía?</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 text-center"><p style="font-family: AnyaTamy;" >
+						<p id="Btn_Sonido_On" style="cursor:pointer"><span> <i class="bi bi-volume-up-fill" style="font-size: 45px; color:rgb(212, 165, 77);"></i> </span></p>
+						
+					</div>
+					<div class="col-md-6 text-center"><p style="font-family: AnyaTamy;" >
+						<p id="Btn_Sonido_Off" style="cursor:pointer"><span> <i class="bi bi-volume-mute-fill" style="font-size: 45px; color:rgb(212, 165, 77);"></i> </span></p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<p>&nbsp;</p>
+						<h2 style="font-family: AnyaTamy; color: gray; font-size: 15px; font-weight: normal;">Mejora la experiencia disfrutando del audio.</h2>
+					</div>
+				</div>
 			</div>
 		  </div>
 		</div>
 	</div>
+
 
 	<div id="fh5co-started" class="fh5co-bg" style="background-image:url(images/img-demo1/foto-playa.jpg);">
 		<div class="overlay"></div>
@@ -555,9 +580,10 @@
 	</div>
 
 	<div class="gototop js-top">
-		
+	
 		<a id="boton">
-			<i class="bi bi-volume-mute-fill" style="color: white; font-size: 25px;"></i>
+			<i id="etiqueta_on" class="bi bi-volume-up-fill" style="color: white; font-size: 25px; cursor: pointer;;" ></i>
+			<i id="etiqueta_off"class="bi bi-volume-mute-fill" style="color: white; font-size: 25px; cursor: pointer; display: none;"></i>
 		</a>  
 		<p style="margin-bottom: 10px;"></p>
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
@@ -607,36 +633,61 @@
         enableUtc: false
     });
 
-	$('#exampleModal').on('shown.bs.modal', function () {
-  		$('#btn_modal').trigger('focus')
+	$(document).ready(function() {
+		$("#Modal_Sonido").modal("toggle");
 	});
 
-	$(document).ready(function() {
+	$("#Btn_Sonido_On").click(function(){
+		$("#Modal_Sonido").modal("hide");
 		$("#audioplayer").get(0).play();
+
+		$("#etiqueta_on").hide();
+		$("#etiqueta_off").show();
+
+		$("#boton").removeClass("apagado");
+		$("#boton").addClass("encendido");
+
 	});
 	
+	$("#Btn_Sonido_Off").click(function(){
+		$("#Modal_Sonido").modal("hide");
+		$("#audioplayer").get(0).pause();
 	
+		
+		$("#etiqueta_off").hide();
+		$("#etiqueta_on").show();
+	
+		$("#boton").removeClass("encendido");
+		$("#boton").addClass("apagado");
+		
+	});
+
+	$("#boton").click(function(){
+
+		var classNames = $('#boton').attr('class').split(' ');
+		if(classNames == 'encendido'){
+			$("#audioplayer").get(0).pause();
+			$("#boton").removeClass("encendido");
+			$("#boton").addClass("apagado");
+			$("#etiqueta_on").show();
+			$("#etiqueta_off").hide();
+			
+			
+		}
+		else {
+			$("#audioplayer").get(0).play();
+			$("#boton").removeClass("apagado");
+			$("#boton").addClass("encendido");
+			$("#etiqueta_off").hide();
+			$("#etiqueta_on").hide();
+			$("#etiqueta_off").show();
+			
+		}
+	});
 
 </script>
 
-<script type="text/javascript">
-	var v = document.getElementsByTagName("audio")[0];
-	var sound = true;
-	
-	var boton = document.getElementById("boton");
-	boton.addEventListener("click", function(){
-	   if (!sound) {
-		   v.play();
-		   this.innerHTML = '<i class="bi bi-volume-mute-fill" style="color: white; font-size: 25px;"></i>';
-		   sound = true;
-	   } else {
-		   v.pause();
-		   this.innerHTML = '<i class="bi bi-volume-up-fill" style="color: white; font-size: 25px;"></i>';
-		   sound = false;
-	   }
-	});
-	</script>
 
-	</body>
+</body>
 </html>
 
