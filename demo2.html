@@ -33,7 +33,6 @@
 	</head>
 	<body>
 		
-	<div class="fh5co-loader"></div>
 	
 <div id="page">
 
@@ -48,14 +47,42 @@
                     <h3 id="titulo_cursiva">Erika <img style="width: 70px; height: 70px;" src="images/img-demo2/and.svg"> Kevin</h3>
                     <span id="texto_simpke">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </span>
                     <br></br>
-                    <div class="simply-countdown simply-countdown-one"></div>
+					
+				<!--COUNTER-->
+					<div class="row">
+						<div class="col-md-12 text-center fh5co-heading animate-box">
+							<div id="countdown" >
+								<div class="col-md-3 col-sm-3 col-xs-3 text-center countdown-element">
+									<p style="margin-top: 10px;"><span id="days"></span> </p>
+									<p><span>días</span></p>
+								</div>
+								<div class="col-md-3 col-sm-3 col-xs-3 text-center countdown-element" class="" >
+									<p style="margin-top: 10px;"><span id="hours"></span> </p>
+									<p><span>horas</span></p>
+								</div>
+								<div class="col-md-3 col-sm-3 col-xs-3 text-center countdown-element"  class="">
+									<p style="margin-top: 10px;"><span id="minutes"></span> </p>
+									<p><span>mins</span></p>
+								</div>
+								<div class="col-md-3 col-sm-3 col-xs-3 text-center countdown-element"  class="">
+									<p style="margin-top: 10px;"><span id="seconds"></span> </p>
+									<p><span>segs</span></p>	
+								</div>
+							</div>
+						</div>
+						<p>&nbsp;</p>
+						<button  id="Btn_Modal_Sonido"type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal_Sonido" style="display: none;">
+						</button>
+					</div>
 				</div>
                 <div class="col-md-1 col-sm-0 col-xs-0">
                 </div>
                 <div class="col-md-6 col-sm-12 col-xs-12 fh5co-cover fh5co-cover-sm" role="banner" style="background-image:url(images/img-demo2/Inicial.jpg);" >
                 </div>
+				
 			</div>
 		</div>
+
 	</header>
 
 	<!-- UBICACIONES-->
@@ -73,6 +100,8 @@
 									<a href="https://www.google.com.mx/maps/place/Parroquia+Santa+Cruz+y+la+Virgen+del+Rosario/@17.6649503,-101.5999765,17z/data=!3m1!4b1!4m11!3m10!1s0x84347666fde6b171:0x397814a9c0785532!5m4!1s2024-04-18!2i2!4m1!1i2!8m2!3d17.6649452!4d-101.5974016!16s%2Fg%2F1wfcpght?entry=ttu" target="_blank">
 										<button id="btn_ubicacion"type="submit" class=""> <i class="bi bi-geo-alt-fill"></i> Ubicación</button>
 									</a>
+									<p>&nbsp;</p>
+						
 								</div>
 							</div>
 							<div class="col-md-2 col-sm-4"><img style="width: 70px; height: 300px; color:blue;" src="images/img-demo2/bible.svg"></div>
@@ -84,6 +113,7 @@
 									<a href="https://www.google.com.mx/maps/place/Parroquia+Santa+Cruz+y+la+Virgen+del+Rosario/@17.6649503,-101.5999765,17z/data=!3m1!4b1!4m11!3m10!1s0x84347666fde6b171:0x397814a9c0785532!5m4!1s2024-04-18!2i2!4m1!1i2!8m2!3d17.6649452!4d-101.5974016!16s%2Fg%2F1wfcpght?entry=ttu" target="_blank">
 										<button id="btn_ubicacion"type="submit" class=""> <i class="bi bi-geo-alt-fill"></i> Ubicación</button>
 									</a>
+									<p>&nbsp;</p>
 								</div>
 							</div>
 						</div>
@@ -94,7 +124,7 @@
 	</div>
 
 	<!-- MESA DE REGALOS-->
-	<div class="container-fluid text-center">
+	<div class="container text-center">
 		<div class="row">
 			<br></br>
 			<div class="col-md-6 col-sm-12 col-xs-12 fh5co-cover fh5co-cover-sm" role="banner" style="background-image:url(images/img-demo2/Secundaria.jpg);" >
@@ -106,24 +136,35 @@
 					<div id="fh5co-event">
 						<div class="row text-center" >
 							<div class="col-md-6 col-sm-12">
-								<div class="row event-wrap animate-box">
+								<div class="row">
 									<div class="col-lg-12 col-md-12 col-sm-12">
 										<h3 id="titulo_cursiva" style="color: #BC9B5D;">Mesa de Regalos</h3>
 										<p id="texto_simple">El regalo es ópcional lo más importante para nosotros. <b>¡Es tu compañia!</b></p>
 									</div>
 									<div class="col-lg-6 col-md-12 col-sm-12">
-											<img src="images/img-demo2/LIVERPOOL_edited.png" style="width: 121px; height: 40px;" >
-											<br></br>
-											<button id=""type="submit" class="btn_mesa_regalos"> <i class="bi bi-gift"></i> Ir al sitio</button>
+										<p>&nbsp;</p>
+										<p>
+											<img src="images/img-demo2/LIVERPOOL_edited.png" style="width: 150px; height: 40px;" > 
+										</p>
+										<a href="https://www.liverpool.com.mx/tienda/home" target="_blank">
+											<button id="btn_ubicacion" type="submit" class=""> <i class="bi bi-gift"></i> IR AL SITIO</button>
+										</a>
 										</div>
 									<div class="col-lg-6 col-md-12 col-sm-12">
-											<img src="images/img-demo2/2560px-Amazon_logo_edited.png" style="width: 121px; height: 40px;" >
-											<br></br>
-											<button id="" type="submit" class="btn_mesa_regalos"> <i class="bi bi-gift"></i> Ir al sitio</button>
+											<p>&nbsp;</p>
+											<p>
+												<img src="images/img-demo2/2560px-Amazon_logo_edited.png" style="width: 150px; height: 40px;" > 
+											</p>
+											<a href="https://www.amazon.com.mx/" target="_blank">
+												<button id="btn_ubicacion" type="submit" class="btn_mesa_regalos"> <i class="bi bi-gift"></i> IR AL SITIO</button>
+											</a>
+
 									</div>
 									<div class="col-lg-12 col-md-12 col-sm-12">
 										<p>&nbsp;</p>
-										<img src="images/img-demo2/sobre.svg" style="width: 100px; height: 30px; color:black;" >
+										<p>
+											<img src="images/img-demo2/sobre.svg" style="width: 100px; height: 30px; color:black;" >
+										</p>
 										<p id="texto_simple" >Otra opción es el dinero en efectivo dentro de un sobre el día del evento.</p>
 									</div>
 								</div>
@@ -141,13 +182,13 @@
 			<div class="col-md-12 col-sm-12 ">
 				<p>&nbsp;</p> 
 				<h3 id="titulo_cursiva" style="color: #BC9B5D;" >Código de Vestimenta</h3>
-				<p id="texto_simple"style="font-size:30px;  letter-spacing: 25px;">RIGUROSO FORMAL</p>
+				<p id="texto_simple"style="font-size:30px; letter-spacing: 25px;">Riguroso Formal</p>
 			</div>
 		</div>	
 	</div>
 
 	<!--CONFIRMACIÓN ASISTENCIA-->
-	<div class="container-fluid text-center">
+	<div class="container text-center">
 		<p>&nbsp;</p>
 		<div class="row">
 			<div class="col-md-5 col-sm-12 col-xs-12">
@@ -190,15 +231,44 @@
 		</div>
 	</footer>
 
+	<!-- MODAL SONIDO -->
+	<div id="Modal_Sonido" class="modal fade" tabindex="-1" role="dialog" 
+	aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-body">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<p>&nbsp;</p>
+						<h2 style="font-family: WestwoodStudio; color: black; font-size: 50px; font-weight: bold;">¿Quieres disfrutar de nuestra melodía?</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 col-sm-6 col-xs-6 text-center"><p style="font-family: AnyaTamy;" >
+						<p id="Btn_Sonido_On" style="cursor:pointer"><span> <i class="bi bi-volume-up-fill" style="font-size: 45px; color:rgb(212, 165, 77);"></i> </span></p>
+						
+					</div>
+					<div class="col-md-6 col-sm-6 col-xs-6 text-center"><p style="font-family: AnyaTamy;" >
+						<p id="Btn_Sonido_Off" style="cursor:pointer"><span> <i class="bi bi-volume-mute-fill" style="font-size: 45px; color:rgb(212, 165, 77);"></i> </span></p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<p>&nbsp;</p>
+						<h2 style="font-family: AnyaTamy; color: gray; font-size: 15px; font-weight: normal;">Mejora la experiencia disfrutando del audio.</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+
 	<!-- ICONOS MUSICA -->
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 	</div>
 </div>
 
-
-	
-	
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
@@ -211,41 +281,65 @@
 	<script src="js/owl.carousel.min.js"></script>
 	<!-- countTo -->
 	<script src="js/jquery.countTo.js"></script>
-
 	<!-- Stellar -->
 	<script src="js/jquery.stellar.min.js"></script>
 	<!-- Magnific Popup --> 
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/magnific-popup-options.js"></script>
-
-	<!-- // <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script> -->
-	<script src="js/simplyCountdown.js"></script>
 	<!-- Main -->
 	<script src="js/main.js"></script>
+	<!--Counter Demo 2-->
+	<script src="js/js_demo2/counter-demo2.js"></script>
 
 	<script>
-    var d = new Date(new Date(2024,6,17) + 200 * 120 * 120 * 2000);
 
-    // default example
-    simplyCountdown('.simply-countdown-one', {
-        year: d.getFullYear(),
-        month: d.getMonth() + 1,
-        day: d.getDate()
-    });
-
-    //jQuery example
-    $('#simply-countdown-losange').simplyCountdown({
-        year: d.getFullYear(),
-        month: d.getMonth() + 1,
-        day: d.getDate(),
-        enableUtc: false
-    });
-
-	$('#exampleModal').on('shown.bs.modal', function () {
-  		$('#btn_modal').trigger('focus')
-	}); 
-
-</script>
+		$(document).ready(function() {
+			$("#Modal_Sonido").modal("toggle");
+		});
+	
+		$("#Btn_Sonido_On").click(function(){
+			$("#Modal_Sonido").modal("hide");
+			$("#audioplayer").get(0).play();
+			$("#etiqueta_on").hide();
+			$("#etiqueta_off").show();
+			$("#boton").removeClass("apagado");
+			$("#boton").addClass("encendido");
+	
+		});
+	
+		$("#Btn_Sonido_Off").click(function(){
+			$("#Modal_Sonido").modal("hide");
+			$("#audioplayer").get(0).pause();
+			$("#etiqueta_off").hide();
+			$("#etiqueta_on").show();
+			$("#boton").removeClass("encendido");
+			$("#boton").addClass("apagado");
+			
+		});
+	
+		$("#boton").click(function(){
+	
+			var classNames = $('#boton').attr('class').split(' ');
+			if(classNames == 'encendido'){
+				$("#audioplayer").get(0).pause();
+				$("#boton").removeClass("encendido");
+				$("#boton").addClass("apagado");
+				$("#etiqueta_on").show();
+				$("#etiqueta_off").hide();
+				
+				
+			}
+			else {
+				$("#audioplayer").get(0).play();
+				$("#boton").removeClass("apagado");
+				$("#boton").addClass("encendido");
+				$("#etiqueta_off").hide();
+				$("#etiqueta_on").hide();
+				$("#etiqueta_off").show();	
+			}
+		});
+	
+		</script>
 
 	</body>
 </html>

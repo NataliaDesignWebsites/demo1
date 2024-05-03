@@ -29,8 +29,6 @@
 	</head>
 	<body>
 		
-	<div class="fh5co-loader"></div>
-
 	<!-- ENCABEZADO -->
 	<header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(images/img-demo5/port5.jpg);" data-stellar-background-ratio="0.5">
 		<div class="overlay"></div>
@@ -51,6 +49,9 @@
 									Tu navegador no soporta el elemento <code>audio</code>.  
 								</audio>  
 							</p>
+
+							<button  id="Btn_Modal_Sonido"type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal_Sonido" style="display: none;">
+							</button>
 						</div>
 					</div>
 				</div>
@@ -341,7 +342,6 @@
 		</div>
 	</div>
 
-
 	<!--FORMAS DE PAGO-->
 	<div id="">
 		<div class="container-fluid" 
@@ -476,6 +476,39 @@
 		</div>
 	</div>
 
+	<!-- MODAL SONIDO -->
+	<div id="Modal_Sonido" class="modal fade" tabindex="-1" role="dialog" 
+	aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-body">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<p>&nbsp;</p>
+						<h2 style="font-family: WestwoodStudio; color: black; font-size: 50px; font-weight: bold;">¿Quieres disfrutar de nuestra melodía?</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 col-sm-6 col-xs-6 text-center"><p style="font-family: AnyaTamy;" >
+						<p id="Btn_Sonido_On" style="cursor:pointer"><span> <i class="bi bi-volume-up-fill" style="font-size: 45px; color:rgb(212, 165, 77);"></i> </span></p>
+						
+					</div>
+					<div class="col-md-6 col-sm-6 col-xs-6 text-center"><p style="font-family: AnyaTamy;" >
+						<p id="Btn_Sonido_Off" style="cursor:pointer"><span> <i class="bi bi-volume-mute-fill" style="font-size: 45px; color:rgb(212, 165, 77);"></i> </span></p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<p>&nbsp;</p>
+						<h2 style="font-family: AnyaTamy; color: gray; font-size: 15px; font-weight: normal;">Mejora la experiencia disfrutando del audio.</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+
+	<!--CONTACTANOS-->
 	<div id="fh5co-started" class="fh5co-bg" style="background-image:url(images/img-demo5/port10.jpg);">
 		<div class="overlay"></div>
 		<div class="container" >
@@ -486,17 +519,6 @@
 				</div>
 				<div class="row animate-box">  
 					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-						<!--<div class="col-md-6 fh5co-heading">
-							<p style="font-family: AnyaTamy; text-transform: uppercase; color: white;">Contactar a Nat:</p>
-							<a aria-label="Chat on WhatsApp" target="_blank" href="https://wa.me/+524626022792/?text=Hola%20Natalia%20me%20encantaría%20asistír%20a%20la%20boda."><img alt="Chat on WhatsApp" src="images/img-demo1/WhatsAppButtonWhiteMedium.svg" />
-							</a>
-								
-						</div>
-						<div class="col-md-6 fh5co-heading">
-							<p style="font-family: AnyaTamy; text-transform: uppercase; color: white;">Contactar a Oli:</p>
-							<a aria-label="Chat on WhatsApp" target="_blank" href="https://wa.me/+524621636729/?text=Hola%20Olimpo%20me%20encantaría%20asistír%20a%20la%20boda."><img alt="Chat on WhatsApp" src="images/img-demo1/WhatsAppButtonWhiteMedium.svg" />
-							</a>	
-						</div>	-->
 						<div class="col-md-12 fh5co-heading">
 							<p style="font-family: AnyaTamy; text-transform: uppercase; color: white;">Contactar a la wedding planner:</p>
 							<a aria-label="Chat on WhatsApp" target="_blank" href="https://wa.me/+524775191782/?text=Hola%20me%20encantaría%20asistír%20a%20la%20boda%20de%20Olimpo%20y%20Natalia."><img alt="Chat on WhatsApp" src="images/img-demo1/WhatsAppButtonWhiteMedium.svg" />
@@ -508,6 +530,7 @@
 		</div>
 	</div>
 
+	<!-- FOOTER-->
 	<footer id="fh5co-footer" role="contentinfo">
 		<div class="container">
 
@@ -520,10 +543,11 @@
 	</footer>
 	</div>
 
+	<!--ICONOS MUSICA-->
 	<div class="gototop js-top">
-		
 		<a id="boton">
-			<i class="bi bi-volume-mute-fill" style="color: white; font-size: 25px;"></i>
+			<i id="etiqueta_on" class="bi bi-volume-up-fill" style="color: white; font-size: 25px; cursor: pointer;;" ></i>
+			<i id="etiqueta_off"class="bi bi-volume-mute-fill" style="color: white; font-size: 25px; cursor: pointer; display: none;"></i>
 		</a>  
 		<p style="margin-bottom: 10px;"></p>
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
@@ -556,51 +580,52 @@
 
 	<script>
 
-    var d = new Date(new Date(2025,6,12) + 200 * 120 * 120 * 2000);
-
-    // default example
-    simplyCountdown('.simply-countdown-one', {
-        year: d.getFullYear(),
-        month: d.getMonth() + 1,
-        day: d.getDate()
-    });
-
-    //jQuery example
-    $('#simply-countdown-losange').simplyCountdown({
-        year: d.getFullYear(),
-        month: d.getMonth() + 1,
-        day: d.getDate(),
-        enableUtc: false
-    });
-
-	$('#exampleModal').on('shown.bs.modal', function () {
-  		$('#btn_modal').trigger('focus')
-	});
-
 	$(document).ready(function() {
+		$("#Modal_Sonido").modal("toggle");
+	});
+
+	$("#Btn_Sonido_On").click(function(){
+		$("#Modal_Sonido").modal("hide");
 		$("#audioplayer").get(0).play();
-	});
-	
-	
+		$("#etiqueta_on").hide();
+		$("#etiqueta_off").show();
+		$("#boton").removeClass("apagado");
+		$("#boton").addClass("encendido");
 
-</script>
-
-<script type="text/javascript">
-	var v = document.getElementsByTagName("audio")[0];
-	var sound = true;
-	
-	var boton = document.getElementById("boton");
-	boton.addEventListener("click", function(){
-	   if (!sound) {
-		   v.play();
-		   this.innerHTML = '<i class="bi bi-volume-mute-fill" style="color: white; font-size: 25px;"></i>';
-		   sound = true;
-	   } else {
-		   v.pause();
-		   this.innerHTML = '<i class="bi bi-volume-up-fill" style="color: white; font-size: 25px;"></i>';
-		   sound = false;
-	   }
 	});
+
+	$("#Btn_Sonido_Off").click(function(){
+		$("#Modal_Sonido").modal("hide");
+		$("#audioplayer").get(0).pause();
+		$("#etiqueta_off").hide();
+		$("#etiqueta_on").show();
+		$("#boton").removeClass("encendido");
+		$("#boton").addClass("apagado");
+		
+	});
+
+	$("#boton").click(function(){
+
+		var classNames = $('#boton').attr('class').split(' ');
+		if(classNames == 'encendido'){
+			$("#audioplayer").get(0).pause();
+			$("#boton").removeClass("encendido");
+			$("#boton").addClass("apagado");
+			$("#etiqueta_on").show();
+			$("#etiqueta_off").hide();
+			
+			
+		}
+		else {
+			$("#audioplayer").get(0).play();
+			$("#boton").removeClass("apagado");
+			$("#boton").addClass("encendido");
+			$("#etiqueta_off").hide();
+			$("#etiqueta_on").hide();
+			$("#etiqueta_off").show();	
+		}
+	});
+
 	</script>
 
 	</body>

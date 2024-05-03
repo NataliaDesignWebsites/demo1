@@ -580,7 +580,6 @@
 	</div>
 
 	<div class="gototop js-top">
-	
 		<a id="boton">
 			<i id="etiqueta_on" class="bi bi-volume-up-fill" style="color: white; font-size: 25px; cursor: pointer;;" ></i>
 			<i id="etiqueta_off"class="bi bi-volume-mute-fill" style="color: white; font-size: 25px; cursor: pointer; display: none;"></i>
@@ -614,7 +613,7 @@
 	<!-- Main -->
 	<script src="js/main.js"></script>
 
-	<script>
+<script>
 
     var d = new Date(new Date(2025,6,12) + 200 * 120 * 120 * 2000);
 
@@ -640,10 +639,8 @@
 	$("#Btn_Sonido_On").click(function(){
 		$("#Modal_Sonido").modal("hide");
 		$("#audioplayer").get(0).play();
-
 		$("#etiqueta_on").hide();
 		$("#etiqueta_off").show();
-
 		$("#boton").removeClass("apagado");
 		$("#boton").addClass("encendido");
 
@@ -652,11 +649,8 @@
 	$("#Btn_Sonido_Off").click(function(){
 		$("#Modal_Sonido").modal("hide");
 		$("#audioplayer").get(0).pause();
-	
-		
 		$("#etiqueta_off").hide();
 		$("#etiqueta_on").show();
-	
 		$("#boton").removeClass("encendido");
 		$("#boton").addClass("apagado");
 		
@@ -680,8 +674,7 @@
 			$("#boton").addClass("encendido");
 			$("#etiqueta_off").hide();
 			$("#etiqueta_on").hide();
-			$("#etiqueta_off").show();
-			
+			$("#etiqueta_off").show();	
 		}
 	});
 

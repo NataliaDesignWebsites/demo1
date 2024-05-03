@@ -404,7 +404,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-event .event-wrap {
   border: 2px solid #dbc9ae;
   background: #f4f2f3;
-  padding: 30px;
+  padding: 13px;
   width: 100%;
   float: left;
 }
@@ -1394,7 +1394,7 @@ form label {
 }
 
 #btn_ubicacion{
-  height: 54px;
+  height: 40px;
   border: none !important;
   background:rgba(211, 192, 163, 1);
   color: black;
@@ -1962,4 +1962,20 @@ form label {
   outline: none;
 }
 
-/*# sourceMappingURL=style.css.map */
+.countdown-element{
+  background-color: rgba(211, 192, 163, 1); 
+  height: 100px;
+  opacity: 60%;
+  border-style: solid; 
+  border-width: 1px;
+  border-color:  rgba(211, 192, 163, 1); 
+
+}
+
+.countdown-element > p {
+  color:black;
+}
+.countdown-element > p > span{
+  color:black;
+
+}
